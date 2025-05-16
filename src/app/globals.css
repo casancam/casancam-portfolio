@@ -235,7 +235,7 @@ body {
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500 xl:translate-x-0 -translate-x-5;
+      @apply uppercase md:text-lg text-black transition-all duration-500 xl:translate-x-0 -translate-x-0;
     }
 
     .arrow-wrapper {
