@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 import { navLinks, specialLinks } from "@/constants";
@@ -23,17 +23,21 @@ const NavBar = () => {
 
     // Close menu when clicking outside
     const handleClickOutside = (e) => {
-      if (menuOpen && !e.target.closest('.mobile-menu') && !e.target.closest('.menu-button')) {
+      if (
+        menuOpen &&
+        !e.target.closest(".mobile-menu") &&
+        !e.target.closest(".menu-button")
+      ) {
         setMenuOpen(false);
       }
     };
-    
-    document.addEventListener('click', handleClickOutside);
+
+    document.addEventListener("click", handleClickOutside);
 
     // cleanup the event listeners when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [menuOpen]);
 
@@ -45,18 +49,23 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [menuOpen]);
 
   return (
-    <header className={`max-w-screen fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? "bg-gray-700/90 backdrop-blur-md shadow-lg py-3" 
-        : "bg-transparent py-5"
-    }`}>
+    <header
+      className={`max-w-screen fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-gray-700/90 backdrop-blur-md shadow-lg py-3"
+          : "bg-transparent py-5"
+      }`}
+    >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="/" className="text-white font-bold text-2xl tracking-wider hover:text-purple-400 transition-colors">
+        <a
+          href="/"
+          className="text-white font-bold text-2xl tracking-wider hover:text-purple-400 transition-colors"
+        >
           Casancam<span className="text-purple-400">Dev</span>
         </a>
 
@@ -65,8 +74,8 @@ const NavBar = () => {
           <ul className="flex items-center gap-6">
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
-                <a 
-                  href={link} 
+                <a
+                  href={link}
                   className="text-white relative px-1 py-2 hover:text-purple-400 transition-colors"
                 >
                   {name}
@@ -74,17 +83,19 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
-            
+
             {/* Special Links */}
             {specialLinks.map(({ link, name, icon }) => (
               <li key={name}>
-                <a 
-                  href={link}
+                <a
+                  href={name === "CV Download" ? "/cv.pdf" : link}
+                  target={name === "CV Download" ? "_blank" : undefined}
                   className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-all
-                    ${name === "CV Download" 
-                      ? "bg-purple-600 hover:bg-purple-700 text-white" 
-                      : "text-white hover:text-purple-400"
-                    }`}
+        ${
+          name === "CV Download"
+            ? "bg-purple-600 hover:bg-purple-700 text-white"
+            : "text-white hover:text-purple-400"
+        }`}
                 >
                   {icon && <span>{icon}</span>}
                   <span>{name}</span>
@@ -95,35 +106,43 @@ const NavBar = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="lg:hidden text-white p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
           <div className="menu-button w-6 flex flex-col gap-1.5">
-            <span className={`block h-0.5 bg-white transition-all duration-300 ${
-              menuOpen ? "transform rotate-45 translate-y-2" : ""
-            }`}></span>
-            <span className={`block h-0.5 bg-white transition-all duration-300 ${
-              menuOpen ? "opacity-0" : "opacity-100"
-            }`}></span>
-            <span className={`block h-0.5 bg-white transition-all duration-300 ${
-              menuOpen ? "transform -rotate-45 -translate-y-2" : ""
-            }`}></span>
+            <span
+              className={`block h-0.5 bg-white transition-all duration-300 ${
+                menuOpen ? "transform rotate-45 translate-y-2" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-0.5 bg-white transition-all duration-300 ${
+                menuOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`block h-0.5 bg-white transition-all duration-300 ${
+                menuOpen ? "transform -rotate-45 -translate-y-2" : ""
+              }`}
+            ></span>
           </div>
         </button>
 
         {/* Mobile Menu */}
-        <div className={`mobile-menu lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/95 backdrop-blur-md z-50 transform transition-transform duration-300 ease-in-out shadow-xl ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}>
+        <div
+          className={`mobile-menu lg:hidden fixed top-0 right-0 h-screen w-64 bg-black/95 backdrop-blur-md z-50 transform transition-transform duration-300 ease-in-out shadow-xl ${
+            menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
           <div className="flex flex-col h-full pt-20 px-6">
             <ul className="flex flex-col gap-4">
               {navLinks.map(({ link, name }) => (
                 <li key={name}>
-                  <a 
-                    href={link} 
+                  <a
+                    href={link}
                     className="text-white text-lg block py-2 border-b border-gray-800 hover:text-purple-400 transition-colors"
                     onClick={() => setMenuOpen(false)}
                   >
@@ -131,15 +150,15 @@ const NavBar = () => {
                   </a>
                 </li>
               ))}
-              
+
               {/* Special Links for Mobile */}
               {specialLinks.map(({ link, name, icon }) => (
                 <li key={name}>
-                  <a 
+                  <a
                     href={link}
                     className={`flex items-center gap-2 py-2 ${
-                      name === "CV Download" 
-                        ? "mt-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-3 rounded-lg text-center" 
+                      name === "CV Download"
+                        ? "mt-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-3 rounded-lg text-center"
                         : "text-white hover:text-purple-400 border-b border-gray-800"
                     }`}
                     onClick={() => setMenuOpen(false)}
@@ -150,13 +169,23 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            
-            <button 
+
+            <button
               className="absolute top-4 right-4 text-white p-2"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
@@ -166,6 +195,6 @@ const NavBar = () => {
       </div>
     </header>
   );
-}
+};
 
 export default NavBar;
