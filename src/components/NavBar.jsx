@@ -155,7 +155,8 @@ const NavBar = () => {
               {specialLinks.map(({ link, name, icon }) => (
                 <li key={name}>
                   <a
-                    href={link}
+                    href={name === "CV Download" ? "/cv.pdf" : link}
+                    target={name === "CV Download" ? "_blank" : undefined}
                     className={`flex items-center gap-2 py-2 ${
                       name === "CV Download"
                         ? "mt-4 bg-purple-600 hover:bg-purple-700 text-white px-4 py-3 rounded-lg text-center"
