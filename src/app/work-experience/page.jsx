@@ -637,7 +637,7 @@ const WorkExperiencePage = () => {
                 Contact Me
               </a>
               <a
-                href="/CV.pdf"
+                href="/cv.pdf"
                 target="_blank"
                 className="inline-block bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition-colors duration-300"
               >

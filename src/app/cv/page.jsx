@@ -1,13 +1,12 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useRef } from 'react'; // Import useRef if needed for scrolling
+import { useRef } from 'react';
 
-// Assuming your CV is in the public folder at /cv/your-cv-name.pdf
-const CV_PATH = "/cv.pdf"; // **IMPORTANT: Update this path to your actual CV file**
+const CV_PATH = "/cv.pdf";
 
 const CvDownloadPage = () => {
-   const pageRef = useRef(null); // Ref for the main page container if needed
+   const pageRef = useRef(null);
 
   return (
     <div ref={pageRef} className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white pt-24 pb-20 overflow-x-hidden">
