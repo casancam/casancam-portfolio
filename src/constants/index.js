@@ -37,9 +37,7 @@ const specialLinks = [
       title: "Founder",
       date: "November 2021 - January 2023",
       responsibilities: [
-        "Developed and deployed a blockchain-powered ticketing platform using Solidity, ensuring tamper-proof event records and enhanced security.",
         "Engineered a scalable API system for recording and verifying Non-Fungible Tickets (NFTs), improving ticket authentication and preventing resales.",
-        "Managed and led a team of developers, designers, and marketing professionals to deliver blockchain-based solutions on time and within budget.",
         "Collaborated with event organizers to streamline ticket validation using QR codes linked to blockchain-verified tickets.",
         "Managed in-person event “Non-Fungible Talks” (March 2022) in Manchester, showcasing innovative ticketing solutions and driving industry interest.",
         "Delivered a presentation at Fintech North Manchester (November 2022), sharing insights on the role of blockchain in ticketing and event management.",
@@ -54,15 +52,12 @@ const specialLinks = [
       title: "Software Engineer II",
       date: "March 2023 - Present",
       responsibilities: [
-        "Developed and maintained new features for different company products frontend using React and Next.js, enhancing performance and user experience.",
+        "Developed and maintained new features for the platform's frontend using React and Next.js, enhancing performance and user experience across multiple products within the energy industry team.",
         "Improved backend services using microservices architecture with Node.js, Docker, and MongoDB, boosting system scalability and reliability.",
-        "Strengthened platform stability by implementing robust CI/CD pipelines and infrastructure management through Terraform and AWS.",
-        "Designed and executed automated testing frameworks using Jest and React Testing Library, increasing test coverage and code reliability.",
-        "Integrated real-time monitoring and alerting with Datadog, reducing production incidents by proactively addressing potential failures.",
-        "Collaborated with cross-functional teams—including product, QA, and DevOps teams—to prioritize feature development and ensure smooth deployments.",
+        "Integrated real-time monitoring and alerting with Datadog, reducing production incidents by 70% and proactively addressing potential system failures.",
+        "Mentored new team members on development best practices, accelerating onboarding while maintaining high code quality standards.",
         "Spearheaded an initiative to streamline and automate the process of building new UIs by integrating Storybook and GitHub Copilot, reducing development time and improving component reusability.",
-        "Facilitated effective communication between engineering and business stakeholders, improving alignment on technical solutions and business goals.",
-        "Explored mobile development opportunities using Flutter and React Native to expand product offerings across multiple platforms."
+        "Architected and deployed a new company-wide product infrastructure from scratch, establishing multiple environments using Terraform and AWS infrastructure-as-code practices, and building robust CI/CD pipelines to ensure seamless and reliable software delivery.",
       ],
     },
     {
@@ -74,7 +69,6 @@ const specialLinks = [
       responsibilities: [
         "Successfully balanced time between client work, content creation, and business management.",
         "Consistently produced high-quality, engaging content on a regular schedule.",
-        "Generated positive feedback and interaction in the comments section, building a community.",
         "Successfully launched +15 number of client websites, meeting or exceeding client expectations.",
         "Received positive testimonials from +15 satisfied website clients.",
         "Implemented advanced features on client sites, such as custom integrations, complex animations, or performance optimizations.",

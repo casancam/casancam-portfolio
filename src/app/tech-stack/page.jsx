@@ -25,24 +25,18 @@ const techStackData = {
           "Experienced in backend development, scripting, and data analysis.",
       },
       {
-        name: "React Native",
-        level: 3,
-        description:
-          "Strong proficiency in building complex, performant, and maintainable mobile applications for iOS and Android using React Native, including deep understanding of component lifecycle, state management (e.g., Redux, Context API), navigation, native module integration, and debugging.",
-      },
-      {
-        name: "Flutter",
-        level: 3,
-        description:
-          "Good working knowledge of building cross-platform mobile applications with Flutter, including understanding of widgets, state management, routing, and integration with platform-specific features.",
-      },
-      {
         name: "Go",
         level: 2,
         description: "Learning and building microservices.",
       },
+      {
+        name: "C++",
+        level: 2,
+        description:
+          "Writing performant system-level applications and exploring backend development.",
+      },
     ],
-    frameworks: [
+    frontend: [
       {
         name: "React",
         level: 5,
@@ -55,14 +49,28 @@ const techStackData = {
           "Experience with server-side rendering and static generation.",
       },
       {
+        name: "Vue.js",
+        level: 3,
+        description: "Experience with frontend development.",
+      },
+      {
+        name: "Vite",
+        level: 3,
+        description:
+          "Fast development and optimized production builds with modern tooling.",
+      },
+      {
+        name: "React Router v7",
+        level: 3,
+        description:
+          "Implemented complex routing patterns with data loading and suspense.",
+      },
+    ],
+    backend: [
+      {
         name: "Node.js",
         level: 5,
         description: "Developed various backend services and APIs.",
-      },
-      {
-        name: "TailwindCss",
-        level: 5,
-        description: "Created beautiful complex UIs.",
       },
       {
         name: "Express.js",
@@ -75,14 +83,48 @@ const techStackData = {
         description: "Building RESTful APIs and middleware.",
       },
       {
-        name: "Vue.js",
-        level: 3,
-        description: "Experience with frontend development.",
-      },
-      {
         name: "Django",
         level: 3,
         description: "Building web applications with Python.",
+      },
+    ],
+    mobile: [
+      {
+        name: "React Native",
+        level: 3,
+        description:
+          "Strong proficiency in building complex, performant, and maintainable mobile applications for iOS and Android using React Native, including deep understanding of component lifecycle, state management (e.g., Redux, Context API), navigation, native module integration, and debugging.",
+      },
+      {
+        name: "Flutter",
+        level: 3,
+        description:
+          "Good working knowledge of building cross-platform mobile applications with Flutter, including understanding of widgets, state management, routing, and integration with platform-specific features.",
+      },
+    ],
+    styling: [
+      {
+        name: "TailwindCss",
+        level: 5,
+        description: "Created beautiful complex UIs.",
+      },
+      {
+        name: "shadcn/ui",
+        level: 3,
+        description:
+          "Built accessible component systems with customizable primitives.",
+      },
+      {
+        name: "Material UI",
+        level: 3,
+        description:
+          "Implemented responsive interfaces with Google's design system.",
+      },
+      {
+        name: "Syncfusion",
+        level: 2,
+        description:
+          "Developed complex data visualizations and enterprise components.",
       },
     ],
     databases: [
@@ -97,14 +139,40 @@ const techStackData = {
         description: "Designing relational schemas and optimizing queries.",
       },
       {
+        name: "Firebase",
+        level: 4,
+        description:
+          "Developing real-time applications with comprehensive cloud services.",
+      },
+      {
         name: "DynamoDb",
         level: 3,
         description: "Designing non-relational schemas and managing queries.",
       },
       {
-        name: "Redis",
+        name: "Appwrite",
+        level: 2,
+        description: "Exploring open-source backend-as-a-service platform.",
+      },
+    ],
+    ai: [
+      {
+        name: "AI.js",
         level: 3,
-        description: "Implementing caching and message queues.",
+        description:
+          "Implemented LLM integrations with streaming responses and function calling.",
+      },
+      {
+        name: "Vercel AI SDK",
+        level: 3,
+        description:
+          "Built conversational UIs with server components and edge runtime optimizations.",
+      },
+      {
+        name: "Vapi",
+        level: 2,
+        description:
+          "Created multi-modal voice assistants with customized conversation flows.",
       },
     ],
     cloud: [
@@ -137,6 +205,13 @@ const techStackData = {
         description: "Writing unit and integration tests.",
       },
       {
+        name: "Datadog",
+        level: 4,
+        description:
+          "Implemented application performance monitoring and real-time metrics dashboards.",
+      },
+
+      {
         name: "CI/CD (e.g., Jenkins, GitHub Actions)",
         level: 4,
         description: "Setting up automated pipelines.",
@@ -145,6 +220,44 @@ const techStackData = {
         name: "Webpack",
         level: 4,
         description: "Configuring build processes.",
+      },
+      {
+        name: "Sentry",
+        level: 2,
+        description:
+          "Set up error tracking and performance monitoring across frontend and backend systems.",
+      },
+    ],
+    softSkills: [
+      {
+        name: "Communication",
+        level: 5,
+        description: "Effectively conveying complex technical concepts to diverse audiences and stakeholders.",
+      },
+      {
+        name: "Problem Solving",
+        level: 5,
+        description: "Breaking down complex challenges and developing innovative solutions.",
+      },
+      {
+        name: "Teamwork & Collaboration",
+        level: 4,
+        description: "Working effectively across multidisciplinary teams and contributing to shared objectives.",
+      },
+      {
+        name: "Project Management",
+        level: 4,
+        description: "Planning, executing, and closing projects on time with effective resource allocation.",
+      },
+      {
+        name: "Adaptability",
+        level: 4,
+        description: "Quickly learning new technologies and adjusting to changing requirements and environments.",
+      },
+      {
+        name: "Leadership",
+        level: 4,
+        description: "Guiding team members, making decisions, and taking ownership of initiatives.",
       },
     ],
   },
@@ -184,7 +297,7 @@ const techStackData = {
     {
       year: 2025,
       description:
-        "Currently exploring Go and Kubernetes for microservices architecture.",
+        "Currently exploring Kubernetes and full-stack web-apps with AI integrations",
     },
   ],
 
@@ -363,13 +476,47 @@ const TechStackPage = () => {
 
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-200">
-                Frameworks & Libraries
+                Frontend Frameworks & Libraries
               </h3>
-              {techStackData.proficiencyLevels.frameworks.map(
-                (skill, index) => (
-                  <AnimatedSkillBar key={index} skill={skill} />
-                )
-              )}
+              {techStackData.proficiencyLevels.frontend.map((skill, index) => (
+                <AnimatedSkillBar key={index} skill={skill} />
+              ))}
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">
+                Backend Frameworks & Libraries
+              </h3>
+              {techStackData.proficiencyLevels.backend.map((skill, index) => (
+                <AnimatedSkillBar key={index} skill={skill} />
+              ))}
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">
+                Mobile Frameworks
+              </h3>
+              {techStackData.proficiencyLevels.mobile.map((skill, index) => (
+                <AnimatedSkillBar key={index} skill={skill} />
+              ))}
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">
+                Styling Frameworks
+              </h3>
+              {techStackData.proficiencyLevels.styling.map((skill, index) => (
+                <AnimatedSkillBar key={index} skill={skill} />
+              ))}
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-200">
+                AI Integrations
+              </h3>
+              {techStackData.proficiencyLevels.ai.map((skill, index) => (
+                <AnimatedSkillBar key={index} skill={skill} />
+              ))}
             </div>
 
             <div>
@@ -399,6 +546,14 @@ const TechStackPage = () => {
               ))}
             </div>
           </div>
+          <div>
+  <h3 className="text-xl font-semibold mb-4 text-gray-200">
+    Soft Skills
+  </h3>
+  {techStackData.proficiencyLevels.softSkills.map((skill, index) => (
+    <AnimatedSkillBar key={index} skill={skill} />
+  ))}
+</div>
         </section>
 
         {/* Skill Learning Journey */}

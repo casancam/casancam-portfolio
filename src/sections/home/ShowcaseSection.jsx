@@ -83,13 +83,13 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/pokedex.png"
-                  alt="Library Management Platform"
+                  src="/images/AIviewed.png"
+                  alt="AI-powered interview platform"
                 />
               </div>
-              <a href="https://pokedex-drab-omega.vercel.app/">
+              <a href="https://ai-viewed.vercel.app/">
                 <h2 className="hover:text-purple-500">
-                  My Full Pokedex Showcase (PokeAPI)
+                  AI-Powered Coding Interview Platform (Call feature not working currently due to Vapi update)
                 </h2>
               </a>
             </div>

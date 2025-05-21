@@ -20,7 +20,6 @@ const workExperienceData = {
           title: "Founder",
           period: "2021 - 2023",
           responsibilities: [
-            "Managed and led a team of developers, designers, and marketing professionals to deliver blockchain-based solutions on time and within budget",
             "Conducted code reviews, provided mentorship, and established development best practices to improve team productivity and quality of work",
             "Collaborated with event organizers to streamline ticket validation using QR codes linked to blockchain-verified tickets",
             "Oversaw technical development, leading cross-functional teams and ensuring successful delivery of customer-centric blockchain solutions",
@@ -62,16 +61,16 @@ const workExperienceData = {
           title: "Software Engineer II",
           period: "2023 - Current",
           responsibilities: [
-            "Designed and executed automated testing frameworks using Jest and React Testing Library, increasing test coverage and code reliability",
-            "Integrated real-time monitoring and alerting with Datadog, reducing production incidents by proactively addressing potential failures",
+            "Developed and maintained new features for the platform's frontend using React and Next.js, enhancing performance and user experience across multiple products within the energy industry team.",
             "Collaborated with cross-functional teams—including product, QA, and DevOps teams—to prioritize feature development and ensure smooth deployments",
             "Facilitated effective communication between engineering and business stakeholders, improving alignment on technical solutions and business goals",
           ],
           achievements: [
-            "Developed and maintained new features for the platform’s frontend using React and Next.js, enhancing performance and user experience",
-            "Improved backend services using microservices architecture with Node.js, Docker, and MongoDB, boosting system scalability and reliability",
-            "Spearheaded an initiative to streamline and automate the process of building new UIs by integrating Storybook and GitHub Copilot, reducing development time and improving component reusability",
-            "Strengthened platform stability by implementing robust CI/CD pipelines and infrastructure management through Terraform and AWS",
+            "Improved backend services using microservices architecture with Node.js, Docker, and MongoDB, boosting system scalability and reliability.",
+            "Integrated real-time monitoring and alerting with Datadog, reducing production incidents by 70% and proactively addressing potential system failures.",
+            "Mentored new team members on development best practices, accelerating onboarding while maintaining high code quality standards.",
+            "Spearheaded an initiative to streamline and automate the process of building new UIs by integrating Storybook and GitHub Copilot, reducing development time and improving component reusability.",
+            "Architected and deployed a new company-wide product infrastructure from scratch, establishing multiple environments using Terraform and AWS infrastructure-as-code practices, and building robust CI/CD pipelines to ensure seamless and reliable software delivery."
           ],
           skills: [
             "NextJs",
@@ -81,6 +80,8 @@ const workExperienceData = {
             "Docker",
             "AWS",
             "Terraform",
+            "MongoDb",
+            "Datadog"
           ],
         },
       ],

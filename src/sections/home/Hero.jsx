@@ -51,8 +51,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I am Carlos Sanchez, a developer based in the UK with a passion for
-              code.
+              Hi, I am Carlos Sanchez, a full-stack engineer based in the UK <br /> excited about frontend, backend and mobile development.
             </p>
 
             <ArrowButton

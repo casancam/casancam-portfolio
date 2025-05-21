@@ -17,7 +17,14 @@ const ProjectsPage = () => {
       client: "Bodyshop Manchester",
       requirements:
         "Create SEO-optimized and loading-efficient website, integrate bookings, Maps API and contact forms.",
-      technologies: ["React", "NextJs", "MongoDB", "EmailJs", "GoogleMapsAPI", "Tailwind"],
+      technologies: [
+        "React",
+        "NextJs",
+        "MongoDB",
+        "EmailJs",
+        "GoogleMapsAPI",
+        "Tailwind",
+      ],
       tags: ["Frontend", "API", "Automobile"],
       description:
         "Complete design and creation of a website for a vehicle bodyshop company operating in Manchester. Website should be fast and be professional.",
@@ -42,7 +49,14 @@ const ProjectsPage = () => {
       client: "BMManchester",
       requirements:
         "Create SEO-optimized and loading-efficient website, Maps API, integrate bookings and complex contact form to sell a car.",
-      technologies: ["React", "NextJs", "MongoDB", "EmailJs", "GoogleMapsAPI", "Tailwind"],
+      technologies: [
+        "React",
+        "NextJs",
+        "MongoDB",
+        "EmailJs",
+        "GoogleMapsAPI",
+        "Tailwind",
+      ],
       tags: ["Frontend", "API", "Automobile"],
       description:
         "Complete redesign and creation of a website for a BMW Garage business operating in Manchester. Website should be fast and be professional and SEO reliable over time (good content).",
@@ -74,7 +88,7 @@ const ProjectsPage = () => {
         "GoogleMapsAPI",
         "ThreeJs",
         "React Three Fiber",
-        "Tailwind"
+        "Tailwind",
       ],
       tags: ["Frontend", "API", "Sports", "3D"],
       description:
@@ -99,7 +113,14 @@ const ProjectsPage = () => {
       client: "Alloy Refurb Salford",
       requirements:
         "Business website creation, SEO strategy and booking system",
-      technologies: ["React", "NextJs", "EmailJs", "MongoDb", "GoogleMapsAPI", "Tailwind"],
+      technologies: [
+        "React",
+        "NextJs",
+        "EmailJs",
+        "MongoDb",
+        "GoogleMapsAPI",
+        "Tailwind",
+      ],
       tags: ["Frontend", "API", "Automobile"],
       description:
         "Created a website for ARS, integrated contact forms, booking system with MongoDb and Maps APIs and created SEO content strategy",
@@ -154,7 +175,7 @@ const ProjectsPage = () => {
         "GoogleMapsAPI",
         "ThreeJs",
         "React Three Fiber",
-        "Tailwind"
+        "Tailwind",
       ],
       tags: ["Frontend", "API", "Automobile", "3D"],
       description:
@@ -186,7 +207,7 @@ const ProjectsPage = () => {
         "GoogleMapsAPI",
         "ThreeJs",
         "React Three Fiber",
-        "Tailwind"
+        "Tailwind",
       ],
       tags: ["Frontend", "API", "Automobile", "3D"],
       description:
@@ -218,7 +239,7 @@ const ProjectsPage = () => {
         "GoogleMapsAPI",
         "ThreeJs",
         "React Three Fiber",
-        "Tailwind"
+        "Tailwind",
       ],
       tags: ["Frontend", "API", "Automobile", "3D"],
       description:
@@ -317,7 +338,7 @@ const ProjectsPage = () => {
       achievements: [
         "1st Full-Stack Project",
         "Successfully designed UI and implemented Firebase integration",
-        "Successfully onboarded 3 users and gathered feedback on how could I have done better UX-wise"
+        "Successfully onboarded 3 users and gathered feedback on how could I have done better UX-wise",
       ],
       challenges:
         "Using Firebase for the first time in a full-stack project, user management, like feature and following and filtering content",
@@ -327,6 +348,40 @@ const ProjectsPage = () => {
       links: {
         demo: "https://softwaregram.vercel.app/login",
         github: "https://github.com/casancam/Instagram-clone",
+      },
+    },
+    {
+      id: 5,
+      title: "AIviewed",
+      requirements:
+        "Create an AI-powered platform to create/prepare software engineer interview with voice integration and get feedback based on performance",
+      technologies: [
+        "Typescript",
+        "React",
+        "Tailwind",
+        "Figma",
+        "Firebase",
+        "Gemini",
+        "Vapi",
+        "Shadcn",
+      ],
+      tags: ["Personal", "Frontend", "API", "Backend", "AI", "Voice"],
+      description:
+        "Built a basic platform that allows you to sign up/in, create your own personalised AI-powered code interviews, complete them and get feedback (Currently not working due to Vapi updates)",
+      achievements: [
+        "1st Full-Stack Project that integrates AI (voice) + AI(feedback with Gemini)",
+        "Successfully designed UI and implemented Firebase integration",
+        "Successfully created, completed and reviewed an AI-powered interview",
+        "Successfully used shadcn for UI components",
+      ],
+      challenges:
+        "Using Vapi for the voice workflows, AI (Gemini) integration was easy. Vapi has been updated and workflows don't work now",
+      learnings:
+        "Learnt to integrate ai library, how to query Gemini or other models, how to integrate and use Vapi within the codebase. Reinforced Firebase knowledge",
+      image: "/images/AIviewed.png",
+      links: {
+        demo: "https://ai-viewed.vercel.app/",
+        // github: "https://github.com/casancam/Instagram-clone",
       },
     },
   ];
@@ -485,43 +540,6 @@ const ProjectsPage = () => {
           )}
         </motion.div>
 
-        {/* Client Projects Section */}
-        <section ref={clientRef} className="mb-20 px-2">
-          <motion.h2
-            className="text-3xl font-bold mb-10 pl-4 border-l-4 border-purple-500"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Client Projects
-          </motion.h2>
-
-          {filteredClientProjects.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {filteredClientProjects.map((project, index) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                  index={index}
-                  isClient={true}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <p className="text-gray-400 text-lg">
-                No client projects match your selected filters.
-              </p>
-              <button
-                onClick={clearTags}
-                className="mt-4 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                Clear filters to see all projects
-              </button>
-            </div>
-          )}
-        </section>
-
         {/* Personal Projects Section */}
         <section ref={personalRef} className="mb-20 px-2">
           <motion.h2
@@ -555,6 +573,43 @@ const ProjectsPage = () => {
               <button
                 onClick={clearTags}
                 className="mt-4 text-pink-400 hover:text-pink-300 transition-colors"
+              >
+                Clear filters to see all projects
+              </button>
+            </div>
+          )}
+        </section>
+
+        {/* Client Projects Section */}
+        <section ref={clientRef} className="mb-20 px-2">
+          <motion.h2
+            className="text-3xl font-bold mb-10 pl-4 border-l-4 border-purple-500"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Client Projects
+          </motion.h2>
+
+          {filteredClientProjects.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {filteredClientProjects.map((project, index) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  index={index}
+                  isClient={true}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              <p className="text-gray-400 text-lg">
+                No client projects match your selected filters.
+              </p>
+              <button
+                onClick={clearTags}
+                className="mt-4 text-purple-400 hover:text-purple-300 transition-colors"
               >
                 Clear filters to see all projects
               </button>
