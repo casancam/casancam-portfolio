@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        <SpeedInsights />
-        <Analytics />
         <Navbar />
         {children}
+        <SpeedInsights />
+        <Analytics />
         <Footer />
       </body>
     </html>
