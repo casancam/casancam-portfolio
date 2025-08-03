@@ -9,7 +9,7 @@ const featuredVideos = [
     title: "LeetCode 1 - Two Sum - JavaScript / Python Solution",
     thumbnail: "/images/leetcode1.png",
     duration: "8:50",
-    views: "15",
+    views: "13",
     category: "LeetCode Solutions",
     link:"https://youtu.be/GYWSO7JavTM"
   },
@@ -17,7 +17,7 @@ const featuredVideos = [
     title: "LeetCode 2 - Add Two Numbers - JavaScript / Python Solution",
     thumbnail: "/images/leetcode2.png",
     duration: "11:59",
-    views: "10",
+    views: "8",
     category: "LeetCode Solutions",
     link:"https://youtu.be/-E3Al5Z8otw"
   },
@@ -26,7 +26,7 @@ const featuredVideos = [
       "LeetCode 3 - Longest Substring Without Repeating Characters - JavaScript / Python Solution",
     thumbnail: "/images/leetcode3.png",
     duration: "10:12",
-    views: "5",
+    views: "9",
     category: "LeetCode Solutions",
     link:"https://youtu.be/zwGRfKFY1FU"
   },
@@ -122,7 +122,7 @@ const MediaPreview = () => {
           <div className="flex gap-6 bg-gray-800/50 rounded-xl p-4">
             <div className="text-center">
               <div className="text-xl sm:text-2xl font-bold text-red-400">
-                2
+                3
               </div>
               <div className="text-xs text-gray-400">Subscribers</div>
             </div>

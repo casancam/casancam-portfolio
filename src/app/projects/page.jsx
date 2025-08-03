@@ -14,6 +14,38 @@ const ProjectsPage = () => {
     {
       id: 1,
       title: "Business Website Creation",
+      client: "Caliper Refurb Manchester",
+      requirements:
+        "Create SEO-optimized and loading-efficient website, integrate bookings, Maps API and contact forms.",
+      technologies: [
+        "React",
+        "NextJs",
+        "MongoDB",
+        "EmailJs",
+        "GoogleMapsAPI",
+        "Tailwind",
+      ],
+      tags: ["Frontend", "API", "Automobile"],
+      description:
+        "Complete design and creation of a website for a caliper painting company operating in Manchester. Website should be fast and be professional.",
+      achievements: [
+        "Increased mobile calls to the caliper facility by 30% in 2 weeks",
+        "SEO lighthouse score of 100%",
+        "Performance lighthouse score of 100%",
+        "Accessibility & Best Practices Lighthouse score +95%",
+      ],
+      challenges:
+        "Making a website with many images and pages as efficient as possible, bookings, nice UI but keeping it professional.",
+      learnings:
+        "Improved UI development and tailwind v4. Learnt new ways of using framer-motion. Tried alternatives but ended up stucking to emailjs for emails",
+      image: "/images/caliper.png",
+      links: {
+        demo: "https://www.caliperrefurbmanchester.co.uk/",
+      },
+    },
+    {
+      id: 2,
+      title: "Business Website Creation",
       client: "Bodyshop Manchester",
       requirements:
         "Create SEO-optimized and loading-efficient website, integrate bookings, Maps API and contact forms.",
@@ -44,7 +76,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 2,
+      id: 3,
       title: "Business Website Creation & SEO improvement",
       client: "BMManchester",
       requirements:
@@ -76,7 +108,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 3,
+      id: 4,
       title: "Padel Business Website and E-commerce",
       client: "EcoPadel UK",
       requirements:
@@ -108,7 +140,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 4,
+      id: 5,
       title: "Website creation and SEO content strategy",
       client: "Alloy Refurb Salford",
       requirements:
@@ -139,7 +171,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 5,
+      id: 6,
       title: "Website creation and SEO content strategy",
       client: "Window Tints Manchester",
       requirements:
@@ -163,7 +195,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 6,
+      id: 7,
       title: "3D Website creation and SEO content strategy",
       client: "JagManchester",
       requirements:
@@ -195,7 +227,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 7,
+      id: 8,
       title: "3D Website creation and SEO content strategy",
       client: "Alloy Refurb Bolton",
       requirements:
@@ -227,7 +259,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 8,
+      id: 9,
       title: "3D Website creation and SEO content strategy",
       client: "Alloy Refurb Cheshire",
       requirements:
@@ -263,6 +295,136 @@ const ProjectsPage = () => {
   const personalProjects = [
     {
       id: 1,
+      title: "Developer Tool Analysis Agents",
+      requirements:
+        "Create a basic and advanced agents using LangChain and LangGraph to fetch internet data and suggest the best developer tool alternatives",
+      technologies: [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "MCP",
+        "AI"
+      ],
+      tags: ["Personal", "Backend", "AI", "LLM"],
+      description:
+        "Built a basic and advanced agents that fetch the website using firecrawl and then return the user information related to their query",
+      achievements: [
+        "1st Project that integrates LangGraph and LangChain",
+        "Successfully connected to an MCP server",
+        "Successfully created agent workflows",
+        "Successfully validated data in order for the agents to keep as much context as possible",
+      ],
+      challenges:
+        "Touching Agents for the first time, Agent orchestration, MCP server connection",
+      learnings:
+        "Learnt to connect to an MCP Server, how to query firecrawl, how to orchestrate agents in steps",
+      image: "/images/AIagent.png",
+      links: {
+        github: "https://github.com/casancam/Langgraph-developer-analysis-agent"
+      },
+    },
+    {
+      id: 2,
+      title: "TravellAIng",
+      requirements:
+        "Create an AI-powered platform to create trip itineraries based on a filter and an admin dashboard",
+      technologies: [
+        "Typescript",
+        "React",
+        "Tailwind",
+        "Figma",
+        "AppWrite",
+        "Gemini",
+        "Sentry",
+        "SyncFusion",
+        "Unsplash"
+      ],
+      tags: ["Personal", "Frontend", "API", "Backend", "AI", "Dashboard"],
+      description:
+        "Built a basic platform that allows you to sign up/in, create your own personalised AI-powered trip itineraries, see an admin dashboard with all your trips and users",
+      achievements: [
+        "Full-stack admin dashboard with GeminiAPI integration",
+        "Successfully designed UI and implemented Appwrite integration",
+        "Successfully integrated SyncFusion components",
+      ],
+      challenges:
+        "Managing AppWrite auth, storage and permissions, Gemini AI integrations",
+      learnings:
+        "Learnt to integrate Appwrite auth and storage, reinforced Gemini API knowledge, integrated Syncfusion and unsplash to generate images",
+      image: "/images/TravellAIng.png",
+      links: {
+        demo: "https://travell-a-ing.vercel.app/",
+        github: "https://github.com/casancam/TravellAIng"
+      },
+    },
+    {
+      id: 3,
+      title: "FoodApp",
+      requirements:
+        "Create a react native app that allows you to search items dynamically and add them to the basket, keep context through all app",
+      technologies: [
+        "Typescript",
+        "React Native (Expo)",
+        "NativeWind",
+        "Figma",
+        "AppWrite",
+        "Sentry",
+        "Zustand",
+      ],
+      tags: ["Personal", "Frontend", "App", "Backend", "Auth"],
+      description:
+        "Built a basic app that allows you to sign up/in and see all available products, search and filter and add them to the cart while keeping context through the whole app",
+      achievements: [
+        "Integrated Sign up/in on a mobile app for the first time",
+        "Successfully integrated Sentry for monitoring in a mobile app",
+        "Successfully used Zustand to keep track of state and contexts within a mobile app",
+        "Successfully used NativeWind for UI components",
+      ],
+      challenges:
+        "Integrating auth in a mobile app, zustand context for the first time.",
+      learnings:
+        "Improved knowledge on react-native and nativeWind while integrating Sentry and reinforced AppWrite skills by using it for auth and storage",
+      image: "/images/foodApp.png",
+      links: {
+        github: "https://github.com/casancam/FoodApp/"
+      },
+    },
+    {
+      id: 4,
+      title: "AIviewed",
+      requirements:
+        "Create an AI-powered platform to create/prepare software engineer interview with voice integration and get feedback based on performance",
+      technologies: [
+        "Typescript",
+        "React",
+        "Tailwind",
+        "Figma",
+        "Firebase",
+        "Gemini",
+        "Vapi",
+        "Shadcn",
+      ],
+      tags: ["Personal", "Frontend", "API", "Backend", "AI", "Voice"],
+      description:
+        "Built a basic platform that allows you to sign up/in, create your own personalised AI-powered code interviews, complete them and get feedback (Currently interview workflow not working due to major Vapi update)",
+      achievements: [
+        "1st Full-Stack Project that integrates AI (voice) + AI(feedback with Gemini)",
+        "Successfully designed UI and implemented Firebase integration",
+        "Successfully created, completed and reviewed an AI-powered interview",
+        "Successfully used shadcn for UI components",
+      ],
+      challenges:
+        "Using Vapi for the voice workflows, AI (Gemini) integration was easy. Vapi has been updated and workflows don't work now",
+      learnings:
+        "Learnt to integrate ai library, how to query Gemini or other models, how to integrate and use Vapi within the codebase. Reinforced Firebase knowledge",
+      image: "/images/AIviewed.png",
+      links: {
+        demo: "https://ai-viewed.vercel.app/",
+        github: "https://github.com/casancam/AIViewed"
+      },
+    },
+    {
+      id: 5,
       title: "Pathfinding Visualizer",
       requirements: "Personal project to explore pathfinding visualization",
       technologies: ["Javascript", "Css", "Algorithms", "React"],
@@ -285,7 +447,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 2,
+      id: 6,
       title: "Mobile Meditation App",
       requirements:
         "Create a meditation app that plays music for the selected duration and type",
@@ -304,7 +466,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 3,
+      id: 7,
       title: "Complete Pokedex (PokeAPI)",
       requirements:
         "Create a complete pokedex that loads efficiently and displays all pokemon and their shiny version.",
@@ -327,7 +489,7 @@ const ProjectsPage = () => {
       },
     },
     {
-      id: 4,
+      id: 8,
       title: "Softwaregram (Instagram Clone)",
       requirements:
         "Create a simple Instagram clone for developers, add session management, image storage, likes, comments, profiles and following features.",
@@ -348,40 +510,6 @@ const ProjectsPage = () => {
       links: {
         demo: "https://softwaregram.vercel.app/login",
         github: "https://github.com/casancam/Instagram-clone",
-      },
-    },
-    {
-      id: 5,
-      title: "AIviewed",
-      requirements:
-        "Create an AI-powered platform to create/prepare software engineer interview with voice integration and get feedback based on performance",
-      technologies: [
-        "Typescript",
-        "React",
-        "Tailwind",
-        "Figma",
-        "Firebase",
-        "Gemini",
-        "Vapi",
-        "Shadcn",
-      ],
-      tags: ["Personal", "Frontend", "API", "Backend", "AI", "Voice"],
-      description:
-        "Built a basic platform that allows you to sign up/in, create your own personalised AI-powered code interviews, complete them and get feedback (Currently not working due to Vapi updates)",
-      achievements: [
-        "1st Full-Stack Project that integrates AI (voice) + AI(feedback with Gemini)",
-        "Successfully designed UI and implemented Firebase integration",
-        "Successfully created, completed and reviewed an AI-powered interview",
-        "Successfully used shadcn for UI components",
-      ],
-      challenges:
-        "Using Vapi for the voice workflows, AI (Gemini) integration was easy. Vapi has been updated and workflows don't work now",
-      learnings:
-        "Learnt to integrate ai library, how to query Gemini or other models, how to integrate and use Vapi within the codebase. Reinforced Firebase knowledge",
-      image: "/images/AIviewed.png",
-      links: {
-        demo: "https://ai-viewed.vercel.app/",
-        // github: "https://github.com/casancam/Instagram-clone",
       },
     },
   ];

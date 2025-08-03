@@ -74,13 +74,18 @@ const techStackData = {
       },
       {
         name: "Express.js",
-        level: 4,
+        level: 5,
         description: "Building RESTful APIs and web applications.",
       },
       {
         name: "GraphQL",
-        level: 3,
+        level: 4,
         description: "Building RESTful APIs and middleware.",
+      },
+      {
+        name: "FastAPI",
+        level: 4,
+        description: "Building more advanced web applications with Python.",
       },
       {
         name: "Django",
@@ -91,7 +96,7 @@ const techStackData = {
     mobile: [
       {
         name: "React Native",
-        level: 3,
+        level: 4,
         description:
           "Strong proficiency in building complex, performant, and maintainable mobile applications for iOS and Android using React Native, including deep understanding of component lifecycle, state management (e.g., Redux, Context API), navigation, native module integration, and debugging.",
       },
@@ -119,6 +124,12 @@ const techStackData = {
         level: 3,
         description:
           "Implemented responsive interfaces with Google's design system.",
+      },
+      {
+        name: "Storybook",
+        level: 3,
+        description:
+          "Implemented responsive components within DTN.",
       },
       {
         name: "Syncfusion",
@@ -151,16 +162,39 @@ const techStackData = {
       },
       {
         name: "Appwrite",
-        level: 2,
+        level: 3,
         description: "Exploring open-source backend-as-a-service platform.",
+      },
+      {
+        name: "Supabase",
+        level: 2,
+        description: "Exploring basics open-source backend-as-a-service platform.",
       },
     ],
     ai: [
       {
         name: "AI.js",
-        level: 3,
+        level: 4,
         description:
           "Implemented LLM integrations with streaming responses and function calling.",
+      },
+      {
+        name: "Langgraph & Langchain",
+        level: 2,
+        description:
+          "Implemented LLM integrations with simple agents that query web information.",
+      },
+      {
+        name: "ElevenLabs",
+        level: 3,
+        description:
+          "Implementing voice-streaming in a tarot reading app",
+      },
+      {
+        name: "Gemini API",
+        level: 4,
+        description:
+          "Implemented Gemini API for text-based analysis in multiple projects",
       },
       {
         name: "Vercel AI SDK",
@@ -179,7 +213,7 @@ const techStackData = {
       {
         name: "AWS",
         level: 4,
-        description: "Experience with EC2, S3, Lambda, RDS, etc.",
+        description: "Experience with EC2, S3, Lambda, RDS, SNS, SQS, etc.",
       },
       {
         name: "Docker",

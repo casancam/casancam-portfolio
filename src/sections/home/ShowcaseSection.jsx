@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Button from "@/components/Button";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,19 +63,18 @@ const AppShowcase = () => {
         </div>
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/pathfinding.png" alt="Ryde App Interface" />
+            <div className="">
+              <Image width={1000} height={1000} className="bg-cover" src="/images/AIagent.png" alt="AI-agent developer tools analysis" />
             </div>
             <div className="text-content">
-              <a href="https://dijkstra-s-pathfinding-algorithm.vercel.app/">
+              <a href="https://github.com/casancam/Langgraph-developer-analysis-agent">
                 <h2 className="hover:text-purple-500">
-                  Pathfinding Algorithm Visualizer
+                  Langgraph Developer Analysis Agent
                 </h2>
               </a>
 
               <p className="text-white-50 md:text-xl">
-                A website built to visualize and learn different pathfinding
-                algorithms and have some fun!
+                Basic and advanced agents that research the internet and help you choose the best alternatives for the software you use.
               </p>
             </div>
           </div>
@@ -89,19 +89,19 @@ const AppShowcase = () => {
               </div>
               <a href="https://ai-viewed.vercel.app/">
                 <h2 className="hover:text-purple-500">
-                  AI-Powered Coding Interview Platform (Call feature not working currently due to Vapi update)
+                  AI-Powered Coding Interview Platform (Interview Workflow not working currently due to major Vapi update)
                 </h2>
               </a>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/ecopadel.png" alt="YC Directory App" />
+                <img src="/images/TravellAIng.png" alt="AI-powered Itinerary creator" />
               </div>
-              <a href="https://www.ecopadel.co.uk/">
+              <a href="https://travell-a-ing.vercel.app/">
                 {" "}
                 <h2 className="hover:text-purple-500">
-                  EcoPadel - A Startup Bringing Innovation to the Padel in UK
+                  TravellAIng - AI-powered itinerary creator (admin view)
                 </h2>
               </a>
             </div>
